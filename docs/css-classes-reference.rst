@@ -64,6 +64,17 @@ Haml ("haml")
 * ``doctype``:          !!! declaration
 * ``bullet``:           line defined by variable
 
+Jade ("jade")
+-------------
+
+* ``tag``:              any tag
+* ``title``:            tag's name
+* ``attribute``:        tag's atribute name
+* ``keyword``:          especific language reserved keywords
+* ``string``:           attribute's value that is a string
+* ``value``:            attribute's value or shorthand id
+* ``bullet``:           class tag
+
 Perl ("perl", "pl")
 -------------------
 
