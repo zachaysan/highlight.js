@@ -1,7 +1,7 @@
 /*
 Language: Jade
 Author: Tomas Aparicio <tomas@aparicio.me>
-Description: Jade is a high performance template engine heavily influenced by Haml and implemented with JavaScript for node. 
+Description: Jade is a high performance template engine heavily influenced by Haml and implemented with JavaScript for node.
 */
 
 // TODO work in process: detect indentation (comments, multiline), attributes with classes
@@ -28,12 +28,9 @@ function (hljs) {
         relevance: 0
       },
       {
-        className: 'attribute keyword',
+        className: 'attribute',
         begin: '^[A-Za-z$_][0-9A-Za-z$_]*',
-        keywords: {
-          keyword: 'mixin include if for while do '
-            + 'else break instanceof switch continue typeof'
-        },
+        keywords: 'mixin include if for while do else break instanceof switch continue typeof',
         end: '[\\s\\n]+'
       },
       {
@@ -42,12 +39,12 @@ function (hljs) {
         end: '[\\n]+',
         contains: [
           {
-            className: 'value keyword',
+            className: 'value',
             begin: '#{.*}',
             relevance: 1
           },
           {
-            className: 'value keyword',
+            className: 'value',
             begin: '{{.*}}',
             relevance: 1
           },
@@ -119,12 +116,12 @@ function (hljs) {
         relevance: 0
       },
       {
-        className: 'value keyword',
+        className: 'value',
         begin: '#{.*}',
         relevance: 1
       },
       {
-        className: 'value keyword',
+        className: 'value',
         begin: '{{.*}}',
         relevance: 1
       }
