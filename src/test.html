@@ -408,6 +408,53 @@ str =~ %r(\(foo|bar\)$)
 </code></pre>
 
   <tr>
+    <th>Jade
+    <td class="jade">
+<pre><code>doctype html
+html
+  head
+    block head
+      title foo
+  body
+    extends layout
+    append things
+    prepend others
+    include:md content.md
+    h1#snargle.blah(style: 'font-weight: normal', title: titlevar} highlight.js
+    #foo
+      | some div
+    // comment
+    //- another comment
+    ul(style: 'margin: 0')
+      li: a(href='#') link
+      - for item in items
+        p= item
+    = variable
+    =variable2
+    This is #{some interpolated text}
+    This is !{escaped interpolation}
+    if foo
+      p foo
+    else
+      p bar
+    unless foo
+      p bar
+    case foo
+      when bar
+        p wow
+      default
+        such case
+    :markdown
+      This is **some** markdown
+    mixin book(name, price)
+      li #{name} for #{price}
+    .books
+      +book("Book A", 12)
+    script.
+      var foo = 'bar';
+</code></pre>
+
+  <tr>
     <th>Nix
     <td class="nix">
 <pre><code>{ stdenv, foo, bar ? false, ... }:
