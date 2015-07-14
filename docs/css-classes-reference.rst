@@ -1218,7 +1218,7 @@ TP ("tp")
 * ``variable``:         system variables
 * ``units``:            units (e.g. mm/sec, sec, deg)
 
-Nimrod ("nimrod", "nim")
+Nim ("nimrod", "nim")
 ------------------------
 
 * ``decorator``         pragma
